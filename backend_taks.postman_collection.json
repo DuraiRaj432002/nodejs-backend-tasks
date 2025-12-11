@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "1a912acf-53eb-4ad5-8765-d5c1b85f7f89",
+		"name": "backend_taks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31350212"
+	},
+	"item": [
+		{
+			"name": "Employee Timesheet Management",
+			"item": [
+				{
+					"name": "createTimeLog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Durai\",\r\n    \"company\": \"company1\",\r\n    \"projectId\": \"1\",\r\n    \"date\": \"2025-12-12\",\r\n    \"punchIn\": \"09:00\",\r\n    \"punchOut\": \"10:30\",\r\n    \"duration\": \"60\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/timeLogs/createTimeLog",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"timeLogs",
+								"createTimeLog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTimeLog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/timeLogs/deleteTimeLog?id=693af5a62ca8de1db97e1d12",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"timeLogs",
+								"deleteTimeLog"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "693af5a62ca8de1db97e1d12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createTimeLog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"693af5a62ca8de1db97e1d12\",\r\n    \"date\": \"2025-12-12\",\r\n    \"punchIn\": \"09:00\",\r\n    \"punchOut\": \"10:30\",\r\n    \"duration\": \"90\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/timeLogs/updateTimeLog",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"timeLogs",
+								"updateTimeLog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTimeLogs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/timeLogs/getTimeLogs",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"timeLogs",
+								"getTimeLogs"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Durai",
+									"disabled": true
+								},
+								{
+									"key": "fromDate",
+									"value": "2025-12-08",
+									"disabled": true
+								},
+								{
+									"key": "toDate",
+									"value": "2025-12-09",
+									"disabled": true
+								},
+								{
+									"key": "company",
+									"value": "company1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "getEmployee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/employee/getEmployee",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"employee",
+								"getEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "getProduct",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/products/getProduct",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"products",
+								"getProduct"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
