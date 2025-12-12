@@ -5,6 +5,10 @@ export const flattenObject = (obj, parentKey = "", res = {}) => {
     const fullKey = parentKey ? `${parentKey}_${sanitizedKey}` : sanitizedKey;
 
     if (Array.isArray(obj[key])) {
+      if (key.toLowerCase() === "reviews") {
+        res[`${fullKey}_count`] = obj[key].length;
+      }
+
       obj[key].forEach((item, index) => {
         const arrayKey = `${fullKey}_${index + 1}`;
 
