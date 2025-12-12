@@ -1,0 +1,142 @@
+[{
+  "schema": [
+    {
+      "field": "minimumOrderQuantity",
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "field": "meta",
+      "types": [
+        "object"
+      ]
+    },
+    {
+      "field": "description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "_id",
+      "types": [
+        "objectId"
+      ]
+    },
+    {
+      "field": "availabilityStatus",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "shippingInformation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "sku",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "price",
+      "types": [
+        "double"
+      ]
+    },
+    {
+      "field": "brand",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "weight",
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "field": "returnPolicy",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "images",
+      "types": [
+        "array"
+      ]
+    },
+    {
+      "field": "thumbnail",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "warrantyInformation",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "id",
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "field": "discountPercentage",
+      "types": [
+        "double"
+      ]
+    },
+    {
+      "field": "rating",
+      "types": [
+        "double"
+      ]
+    },
+    {
+      "field": "tags",
+      "types": [
+        "array"
+      ]
+    },
+    {
+      "field": "dimensions",
+      "types": [
+        "object"
+      ]
+    },
+    {
+      "field": "stock",
+      "types": [
+        "int"
+      ]
+    },
+    {
+      "field": "title",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "category",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "reviews",
+      "types": [
+        "array"
+      ]
+    }
+  ]
+}]
