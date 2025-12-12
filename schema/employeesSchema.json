@@ -1,0 +1,40 @@
+[{
+  "schema": [
+    {
+      "field": "id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "_id",
+      "types": [
+        "objectId"
+      ]
+    },
+    {
+      "field": "name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "education",
+      "types": [
+        "object"
+      ]
+    },
+    {
+      "field": "address",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "Exp",
+      "types": [
+        "array"
+      ]
+    }
+  ]
+}]
