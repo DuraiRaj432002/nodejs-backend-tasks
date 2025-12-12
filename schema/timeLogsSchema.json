@@ -1,0 +1,64 @@
+[{
+  "schema": [
+    {
+      "field": "punchOut",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "company",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "field": "projectId",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "punchIn",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "_id",
+      "types": [
+        "objectId"
+      ]
+    },
+    {
+      "field": "duration",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "createdAt",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "field": "name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "field": "updatedAt",
+      "types": [
+        "date"
+      ]
+    }
+  ]
+}]
